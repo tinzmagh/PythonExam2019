@@ -4,7 +4,7 @@ All you have to do is input an URL and then it crawls the website and saves all 
 
 ### Install dependencies
 The program makes use of outside libraries.
-In order the install these libraries simply write this in terminal:
+In order to install these libraries simply write this in terminal:
 
 ````
     $ pip install -r requirements.txt
