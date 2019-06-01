@@ -38,7 +38,7 @@ def find_link(url):
     return full_links
 
 
-# Creates a markdown file, and and changes the html to markdown.
+# Creates markdown file, and changes the html to markdown.
 def web_scraper(web_page, url):
     end_url = url[::-1].find('/')
     root_url = url[:-end_url]

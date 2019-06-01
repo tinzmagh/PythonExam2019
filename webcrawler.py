@@ -5,15 +5,20 @@ from simple_colors import *
 def main():
     scraped = set()
 
-    print(cyan('--------------------------------------------','bold'))
-    print(cyan('                 WEB CRAWLER                ','bold'))
-    print(cyan('--------------------------------------------\n','bold'))
-    # Asks user to input url
-    url = 'https://clbokea.github.io/exam/index.html'
-    #url = input(cyan('Enter url of the website you wish to crawl: \n','bold'))
+    print(cyan('--------------------------------------------------------------------------------','bold'))
+    print(cyan('                                  WEB CRAWLER                                   ','bold'))
+    print(cyan('--------------------------------------------------------------------------------\n','bold'))
     
+    # Asks user for url
+    print(cyan('Do you want to use the default url, if no you need to provide your own: ','bold'))
+    user_input = input(cyan('(y/n): '))
+    if user_input == 'n':
+        url = input(cyan('Enter url of website you want to crawl: ','bold'))
+    else:
+        url = 'https://clbokea.github.io/exam/index.html'
+
+
     # Creates project folder by getting user input
-    #create_project_dir('eksamen2019')
     create_project_dir(input(cyan('Give name to project folder: \n','bold')))
 
     # Finds all the links in the url
