@@ -18,8 +18,7 @@ When you run pip list you should than be able to see the installed dependencies
     pip           19.1.1 
     setuptools    40.8.0 
     simple-colors 0.1.5
-
-````
+`````
 
 ### Run program
 In order to run the program write this code:
