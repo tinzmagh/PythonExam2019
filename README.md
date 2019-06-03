@@ -9,7 +9,7 @@ In order to install these libraries simply write this in terminal:
 ````
     $ pip install -r requirements.txt
 `````
-When you run pip list you should than be able to see the installed dependencies
+When you run pip list you should then be able to see the installed dependencies
 `````
     $ pip list
 
