@@ -2,7 +2,7 @@
 This is my project for my python exam. I have choosen to do assignment 1: Crawl a web site and save the content in markdown.
 All you have to do is input an URL and then it crawls the website and saves all the content in markdown.
 
-### Install dependencies
+### Installation
 The program makes use of outside libraries.
 In order to install these libraries simply write this in terminal:
 
@@ -20,11 +20,10 @@ When you run pip list you should than be able to see the installed dependencies
     simple-colors 0.1.5
 `````
 
-### Run program
+### Usage
 In order to run the program write this code in the terminal:
 
 ````python
-    
     python webcrawler.py
 
 ````
