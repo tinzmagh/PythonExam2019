@@ -1,5 +1,5 @@
 # Python exam project 2019
-For my python exam project I have made a web crawler from scratch. 
+This is my project for my python exam. I have choosen to do assignment 1: Crawl a web site and save the content in markdown.
 All you have to do is input an URL and then it crawls the website and saves all the content in markdown.
 
 ### Install dependencies
@@ -15,13 +15,13 @@ When you run pip list you should than be able to see the installed dependencies
 
     Package       Version
     ------------- -------
-    pip           19.1.1 
-    setuptools    40.8.0 
+    pip           18.1. 
+    setuptools    40.6.2 
     simple-colors 0.1.5
 `````
 
 ### Run program
-In order to run the program write this code:
+In order to run the program write this code in the terminal:
 
 ````python
     

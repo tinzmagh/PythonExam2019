@@ -65,11 +65,13 @@ def web_scraper(web_page, url):
             lines = lines.replace('</h3>','\n')
         if '<pre>' in lines:
             lines = lines.replace('<pre>','\n````\n')
-            lines = lines.replace('</pre>','\n````\n')  
+            lines = lines.replace('</pre>','\n````\n')
+            lines = lines.replace('*','\n*')  
+            lines = lines.replace('#','\n#') 
         if '<code>' in lines:
             lines = lines.replace('<code>','\n')
             lines = lines.replace('</code>','\n') 
-            lines = lines.replace('&gt;','&gt;\n')   
+            lines = lines.replace('&gt;','&gt;\n') 
         if '<li>' in lines:
             lines = lines.replace('<li>', '\n* ')
             lines = lines.replace('</li>', '')
@@ -80,7 +82,7 @@ def web_scraper(web_page, url):
         if '<p' in lines:
             lines = lines.replace('<p>', '')
             lines = lines.replace('</p>', '\n')
-            lines = lines.replace('<p class="lead">', '')
+            lines = lines.replace('<p class="lead">', '> ')
         if '<div' in lines:
             lines = lines.replace('<div>', '')
             lines = lines.replace('</div>', '\n')
@@ -113,6 +115,8 @@ def web_scraper(web_page, url):
                     lines = lines.replace(a_tag, '('+ word +')')
                 if '.html' in word:
                     lines = lines.replace(a_tag, '('+root_url + word +')')
+                if '#' in word:
+                    lines = lines.replace(a_tag, '('+url + word +')')
         file.write(lines)
     file.close()
 

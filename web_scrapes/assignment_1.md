@@ -56,6 +56,10 @@ Backend development&lt;/li&gt;
 Becomes:
 
 ````
- # Clbo company Welcome home! Here you have a list of our services * Web Scraping * Web Design * Backend development 
+ 
+# Clbo company Welcome home! Here you have a list of our services 
+* Web Scraping 
+* Web Design 
+* Backend development 
 ````
 The links to follow (crawl) would in this case be "about.html" and "contact.html"

@@ -1,9 +1,9 @@
-Assignment 2
+> Assignment 2
 # Blackjack
 
 ![Picture link](https://clbokea.github.io/exam/src/how-do-you-play-blackjack.jpg)
 
-Create a console application of the card game Blackjack.
+> Create a console application of the card game Blackjack.
 The rules of the game can be found here: (https://en.wikipedia.org/wiki/Blackjack)
 ## Further requirements
  
